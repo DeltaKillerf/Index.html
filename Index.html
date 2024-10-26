@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0; /* Aumenta o espaçamento vertical */
+            text-align: center; /* Centraliza todo o conteúdo do cabeçalho */
+        }
+        h1 {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5em; /* Tamanho do título */
+        }
+        nav {
+            margin-top: 10px; /* Espaçamento entre o título e a navegação */
+            display: flex;
+            justify-content: center; /* Centraliza a navegação */
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-top: 10px; /* Espaçamento entre a navegação e a barra de pesquisa */
+            display: flex;
+            justify-content: center; /* Centraliza a barra de pesquisa */
+        }
+        input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 0; /* Remove margens */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            max-width: 1200px; /* Limita a largura do conteúdo */
+            margin: 0 auto; /* Centraliza o conteúdo */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CCG</h1>
+        <nav>
+            <a href="#">Configurações</a>
+            <a href="#">Sobre</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar...">
+            <button onclick="searchFunction()">Buscar</button>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <button onclick="redirectToWhatsApp()">Clique Aqui!</button>
+        </div>
+    </main>
+
+    <script>
+        function redirectToWhatsApp() {
+            window.location.href = "https://chat.whatsapp.com/L3GLffxg5AOLTi2mShwfp3";
+        }
+        
+        function searchFunction() {
+            const query = document.querySelector('input[type="text"]').value;
+            alert(`Você pesquisou por: ${query}`);
+        }
+    </script>
+</body>
+</html>
